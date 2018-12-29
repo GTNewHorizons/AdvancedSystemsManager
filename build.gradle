@@ -37,11 +37,11 @@ repositories {
     }
     maven { // OpenComputers
         name 'opencomputers'
-        url "http://maven.cil.li"
+        url "https://maven.cil.li/"
     }
     maven { //chisel
         name "Chisel Repo"
-        url "http://maven.tterrag.com"
+        url "https://maven.tterrag.com"
     }
 
 }
@@ -50,7 +50,7 @@ dependencies {
     compile group: 'codechicken', name: 'NotEnoughItems', version: "${version_minecraft}-${version_nei}", ext: 'jar', classifier: "dev"
     compile group: 'codechicken', name: 'CodeChickenCore', version: "${version_minecraft}-${version_cccore}", ext: 'jar', classifier: "dev"
     compile group: 'codechicken', name: 'CodeChickenLib', version: "${version_minecraft}-${version_cclib}", ext: 'jar', classifier: "dev"
-    compile "li.cil.oc:OpenComputers:MC${version_minecraft}-${opencomputers_version}-dev:dev"
+    compile "li.cil.oc:OpenComputers:MC${version_minecraft}-${opencomputers_version}:dev"
     compile "mcp.mobius.waila:Waila:${waila_version}_${version_minecraft}:dev"
     compile "team.chisel:Chisel:${version_chisel}:deobf"
     compile "team.chisel.ctmlib:CTMLib:MC${version_minecraft}-${version_ctmlib}:deobf"
